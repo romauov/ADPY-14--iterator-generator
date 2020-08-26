@@ -9,7 +9,7 @@ class CountriesWikiURLs:
         with open(json_file, 'r', encoding='utf-8') as f:
             self.countries_data_list = json.load(f)
         self.end = len(self.countries_data_list)
-        start_text = '<!DOCTYPE html>' + '\n' + '<html lang="en">' + '\n' + '<head>' + '\n' + '    ' + '<meta charset="UTF-8">' + '\n' + '    ' + '<title>Title</title>' + '\n' + '</head>' + '\n' + '<body>' + '\n'
+        start_text = '<!DOCTYPE html>' + '\n' + '<html lang="en">' + '\n' + '<head>' + '\n' + '    ' + '<meta charset="UTF-8">' + '\n' + '    ' + '<title>Title</title>' + '\n' + '</head>' + '\n' + '<body>'
         with open(self.output_file, 'a', encoding='utf-8') as file:
             file.write(start_text + '\n')
 
